@@ -8,6 +8,7 @@
 <body>
     <fieldset>
         <center>
+            
             <img src="profile.jpg" width="100">
             <h1> TELANGANA STATE ROAD TRANSPORT CORPORATION</h1>
             <h2>GENERAL BUS PASS APPLICATION</h2></center>
@@ -21,11 +22,12 @@
             <input name="fathername" id="fname" type="text"maxlength="10" pattern="[a-zA-Z]+" title="enter characters small or caps" required><br>
             <label for="date">Date of birth*</label>
             <input id="date" title="enter digits" type="text" pattern="[0-9]+" maxlength="2" name="date" required>
-            <label >Gender* </label>
-            <label for="female">female</label>
-            <input type="radio" id="female" name="gander" value="female" required>
+            <label >Gender* </label> 
             <label for="male" >male</label>
-            <input type="radio" value="male" name="male" id="male">
+            <input type="radio" id="male" value="male" name="gender">
+            <label for="male" >female</label>
+            <input type="radio" id="female" value="female" name="gender">
+            
             <br>
             <label for="age">Ages As No*</label>
             <input type="text" name="age" pattern="[0-9]+" maxlength="2" id="age" title="enter digits" required>
@@ -34,7 +36,7 @@
             <label for="month">months</label>
             <input id="month" type="text" name="month" maxlength="2">
             <label for="day">day</label>
-            <input id="day" type="text" name="day"maxlength="2" minlength="1">
+            <input id="day" type="text" name="day">
             <br>
             <label for="adhar">Aadhaar No:</label>
             <input type="text" id="adhar" name="adhar" maxlength="13" pattern="[a-zA-Z/d]" title="enter caps or small or digits" required>

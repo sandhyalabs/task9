@@ -13,48 +13,48 @@
             <h1> TELANGANA STATE ROAD TRANSPORT CORPORATION</h1>
             <h2>GENERAL BUS PASS APPLICATION</h2></center>
     </fieldset>
-    <form action="responsive.html" method="get" autocomplete="off" >
+    <form action="responsive.html" method="get" autocomplete="off" enctype="multipart/form-data">
         <fieldset>
             <legend>Application Details</legend>
             <label for="name" >name *</label>
-            <input name="name" autocomplete="off"  type="text" maxlength="10" id="name" maxlength="20" pattern="[a-zA-Z]+" title="enter characters small or caps" autofocus  required>
+            <input name="name" autocomplete="off"  type="text" maxlength="10" id="name" maxlength="20" pattern="[a-zA-Z]+" title="enter characters small or caps" autofocus required >
             <label for="fname">father/guardian's Name*</label>
-            <input name="fathername" id="fname" type="text"maxlength="10" pattern="[a-zA-Z]+" title="enter characters small or caps" required><br>
+            <input required name="fathername" id="fname" type="text"maxlength="10" pattern="[a-zA-Z]+" title="enter characters small or caps"><br>
             <label for="date">Date of birth*</label>
-            <input id="date" title="enter digits" type="text" pattern="[0-9]+" maxlength="2" name="date" required>
+            <input required id="date" title="enter digits" type="text" pattern="[0-9]+" maxlength="2" name="date" >
             <label >Gender* </label> 
             <label for="male" >male</label>
-            <input type="radio" id="male" value="male" name="gender">
+            <input required type="radio" id="male" value="male" name="gender">
             <label for="male" >female</label>
-            <input type="radio" id="female" value="female" name="gender">
+            <input required type="radio" id="female" value="female" name="gender">
             
             <br>
             <label for="age">Ages As No*</label>
-            <input type="text" name="age" pattern="[0-9]+" maxlength="2" id="age" title="enter digits" required>
+            <input required type="text" name="age" pattern="[0-9]+" maxlength="2" id="age" title="enter digits" >
             <lable for="year">year</lable>
-            <input id="year" type="text" name="year"maxlength="4" minlength="4">
+            <input required  id="year" type="text" name="year"maxlength="4" minlength="4" pattern="[0-9]+">
             <label for="month">months</label>
-            <input id="month" type="text" name="month" maxlength="2">
+            <input required  id="month" type="text" name="month" maxlength="2">
             <label for="day">day</label>
-            <input id="day" type="text" name="day">
+            <input required id="day" type="text" name="day">
             <br>
             <label for="adhar">Aadhaar No:</label>
-            <input type="text" id="adhar" name="adhar" maxlength="13" pattern="[a-zA-Z/d]" title="enter caps or small or digits" required>
+            <input  required type="text" id="adhar" name="adhar" maxlength="13" pattern="[a-zA-Z/d]" title="enter caps or small or digits" >
             <br>
             <label for="number">Whatsapp number*</label>
-            <input type="tel" id="number" required>
+            <input required type="tel" id="number" >
             <label for="mail">E-mail id*</label>
-            <input type="email" name="mail" id="mail">
+            <input required type="email" name="mail" id="mail" pattern="[a-zA-Z0-9]+@gmail.com">
             <br>
             <label>Photo*</label>
-            <input type="file">
+            <input required type="file" accept=".pdf..docx">
         </fieldset>
         <fieldset>
             <legend>Residential Address Details</legend>
             <label for="address">Application Address*</label>
-            <textarea id="address"></textarea>
+            <textarea id="address" spellcheck="true" rows="10" cols="15"></textarea>
             <label >District*</label>
-            <select name="districts" id="district"required>
+            <select required name="districts" id="district"required>
                 <option value="andhara">andhra</option>
                 <option value="telangana">telangana</option>
                 <option value="tamilnadu">tamilnadu</option>
@@ -109,9 +109,11 @@
           </fieldset>
           <center>
             <img src="catch.jpg" width="200"><br>
-            <input type="text"pattern="[CsQ9yk]" title="enter the above text">
+            <input  required type="text"pattern="[CsQ9yk]" title="enter the above text">
             <br>
-            <input type="submit">
+            <input required type="password" placeholder="password" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*]).{8,16}">
+            <br><input type="submit">
+
         </center>
     </form>
     
